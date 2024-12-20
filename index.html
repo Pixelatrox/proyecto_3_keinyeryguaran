@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Información del Clima</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img id="icono" alt="icono del clima ">
-    <h1>informacion del clima de caracas venezuela </h1>
-    <div id="clima"></div>
-    <div id="descripcion"></div>
-    <div  id="temperatura"></div>
-    <div id="sensacionTermica"></div>
-    <div id="humedad"></div>
-    <div id="presion"></div>
-    <div id="langitud"> </div>
-    <div id="longitud"></div>
+    <h1>Información del Clima en Caracas</h1>
+    <div id="clima-info">
+        
+            <p id="clima"></p>
+            <img id="icono" class="icono" src="" alt="Icono del clima">
+            <p id="descripcion"></p>
+            <p id="temperatura"></p>
+            <p id="sensacionTermica"></p>
+            <p id="humedad"></p>
+            <p id="presion"></p>
+            <p id="latitud"></p>
+            <p id="longitud"></p>
+
+    </div>
+    <script src="scrip.js"></script>
 </body>
 
-
-<script>
-//me parece mas comodo asi 
-async function buscarClima() {
-    const response = await fetch ("https://api.openweathermap.org/data/2.5/weather?q=Caracas,Venezuela&appid=3"); 
-    return await response.json();
-}
-
-
-    
-
-
-</script>
-
-
-
-
 </html>
+
